@@ -1,38 +1,32 @@
 # -*- coding: utf-8 -*-
-from collections import Iterator
-#判断是否是迭代器(Iterator)
-isinstance((x for x in range(10)), Iterator) #True
+from collections import Iterable
 
-isinstance([], Iterator)#False
+dict = {'a':1,'b':2,'c':3}
 
-isinstance({}, Iterator)#False
+#迭代key
+for key in dict:
+	print(key)
 
-isinstance('abc', Iterator)#False
+#迭代value
+for value in dict.values():
+	print(value)
 
-"""
-生成器都是Iterator对象，但list、dict、str虽然是Iterable，却不是Iterator。
-把list、dict、str等Iterable变成Iterator可以使用iter()函数
-"""
+#迭代key & value
+for key1,value1 in dict.items():
+	print('key:',key1,'value:',value1)
 
-isinstance(iter([]),Iterator) #True
-isinstance(iter('abc'),Iterator) #True
+#检测是否是可迭代对象
 
-"""
-凡是可作用于for循环的对象都是Iterable类型；
-凡是可作用于next()函数的对象都是Iterator类型,它们表示一个惰性计算的序列
-集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象。
-Python的for循环本质上就是通过不断调用next()函数实现的
-"""
-for x in [1, 2, 3, 4, 5]:
-    pass
-#等价于
+print(isinstance('string',Iterable)) #True
 
-it = iter([1, 2, 3, 4, 5])
-# 循环:
-while True:
-    try:
-        # 获得下一个值:
-        x = next(it)
-    except StopIteration:
-        # 遇到StopIteration就退出循环
-        break
+print(isinstance([1,2,3,4],Iterable)) #True
+
+print(isinstance(123,Iterable))  #False
+
+print(isinstance((1,2,3,4),Iterable)) #True
+
+#循环索引-元素对
+
+for key,value in enumerate(['A','B','C']):
+	print(key,value)
+
