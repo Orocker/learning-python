@@ -11,8 +11,8 @@ def print_score(std):
 
 #面向对象
 
-class student(object):
-	"""docstring for student"""
+class Student(object):
+	"""docstring for Student"""
 	def __init__(self, name,score):
 		self.name = name
 		self.score = score
@@ -20,7 +20,7 @@ class student(object):
 	def print_score(self):
 		print('%s: %s' % (self.name, self.score))
 
-bart = student('Bob',20)
-lisa = student('Lisa Simpson', 87)
+bart = Student('Bob',20)
+lisa = Student('Lisa Simpson', 87)
 bart.print_score()
 lisa.print_score()
