@@ -4,7 +4,7 @@ from queue import Queue
 
 def job(l,q):
     for i in range(len(l)):
-        l[i] = l[i]**2
+        l[i] = l[i] ** 2
     q.put(l)
 
 def multithreading():
