@@ -1,26 +1,27 @@
 # -*- coding: utf-8 -*-
 import math
-#高阶函数
+
+# 高阶函数
 """
 函数本身也可以赋值给变量，即：变量可以指向函数
 函数名也是变量
 传入函数
 
 """
+
+
 def add(x, y, f):
     return f(x) + f(y)
 
-add(-5, 6, abs) #11
-add(25, 9, math.sqrt) #8.0
 
-#推导计算过程为
+add(-5, 6, abs)  # 11
+add(25, 9, math.sqrt)  # 8.0
+
+# 推导计算过程为
 # x = -5
 # y = 6
 # f = abs
 # f(x) + f(y) ==> abs(-5) + abs(6) ==> 11
 # return 11
 
-#返回平方根
-
-
-
+# 返回平方根

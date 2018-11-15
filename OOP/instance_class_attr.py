@@ -4,14 +4,15 @@ class Student(object):
     def __init__(self, name):
         self.name = name
 
+
 s1 = Student('Bob')
 s1.score = 90
 
 print(s1.score)
 
 
- class Student(object):
-     name = 'Student'
+class Student(object):
+    name = 'Student'
 
 # >>> s = Student() # 创建实例s
 # >>> print(s.name) # 打印name属性，因为实例并没有name属性，所以会继续查找class的name属性

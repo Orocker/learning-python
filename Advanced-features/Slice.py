@@ -7,5 +7,6 @@ def trim(s):
     else:
         return s
 
+
 print(trim(' test'))
 print(trim(' test '))

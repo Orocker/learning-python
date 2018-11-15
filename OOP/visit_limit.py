@@ -2,8 +2,8 @@
 
 class Student(object):
 
-	#属性名称前加 __ 表示这个属性为私有属性 变量前面加 __ 表示为私有变量
-	#私有属性、私有变量外部无法访问
+    # 属性名称前加 __ 表示这个属性为私有属性 变量前面加 __ 表示为私有变量
+    # 私有属性、私有变量外部无法访问
 
     def __init__(self, name, score):
         self.__name = name
@@ -29,19 +29,21 @@ class Student(object):
         else:
             return 'C'
 
+
 class Student1(object):
-	def __init__(self,name,gender):
-		self.name = name
-		self.gender = gender
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
 
-	def set_gender(self,gender):
-		if gender == 'male' or gender == 'fmale':
-			self.__gender = gender
-		else:
-			raise ValueError('Bad Value')
+    def set_gender(self, gender):
+        if gender == 'male' or gender == 'fmale':
+            self.__gender = gender
+        else:
+            raise ValueError('Bad Value')
 
-	def get_gender(self,gender):
-		return self.__gender
+    def get_gender(self, gender):
+        return self.__gender
+
 
 bart = Student('Bart Simpson', 59)
 print('bart.get_name() =', bart.get_name())

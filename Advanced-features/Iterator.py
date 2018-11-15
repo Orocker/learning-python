@@ -1,21 +1,22 @@
 # -*- coding: utf-8 -*-
 from collections import Iterator
-#判断是否是迭代器(Iterator)
-isinstance((x for x in range(10)), Iterator) #True
 
-isinstance([], Iterator)#False
+# 判断是否是迭代器(Iterator)
+isinstance((x for x in range(10)), Iterator)  # True
 
-isinstance({}, Iterator)#False
+isinstance([], Iterator)  # False
 
-isinstance('abc', Iterator)#False
+isinstance({}, Iterator)  # False
+
+isinstance('abc', Iterator)  # False
 
 """
 生成器都是Iterator对象，但list、dict、str虽然是Iterable，却不是Iterator。
 把list、dict、str等Iterable变成Iterator可以使用iter()函数
 """
 
-isinstance(iter([]),Iterator) #True
-isinstance(iter('abc'),Iterator) #True
+isinstance(iter([]), Iterator)  # True
+isinstance(iter('abc'), Iterator)  # True
 
 """
 凡是可作用于for循环的对象都是Iterable类型；
@@ -25,7 +26,7 @@ Python的for循环本质上就是通过不断调用next()函数实现的
 """
 for x in [1, 2, 3, 4, 5]:
     pass
-#等价于
+# 等价于
 
 it = iter([1, 2, 3, 4, 5])
 # 循环:

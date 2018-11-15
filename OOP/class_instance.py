@@ -18,6 +18,7 @@ class Student(object):
         else:
             return 'C'
 
+
 bart = Student('Bart Simpson', 59)
 lisa = Student('Lisa Simpson', 87)
 
