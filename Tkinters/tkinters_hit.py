@@ -1,6 +1,6 @@
 import tkinter as tk
 
-window = tk.Tk();
+window = tk.Tk()
 window.title('My tk window')
 window.geometry('500x500')
 var = tk.StringVar()
