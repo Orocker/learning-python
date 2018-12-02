@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 class Student(object):
 
     def __init__(self, name, score):
@@ -20,6 +21,7 @@ class Student(object):
 
 
 bart = Student('Bart Simpson', 59)
+
 lisa = Student('Lisa Simpson', 87)
 
 print('bart.name =', bart.name)

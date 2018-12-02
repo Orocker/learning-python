@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Student(object):
 
     # 属性名称前加 __ 表示这个属性为私有属性 变量前面加 __ 表示为私有变量

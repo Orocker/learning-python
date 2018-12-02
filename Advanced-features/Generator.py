@@ -16,6 +16,7 @@ for n in gener:
 
 # for循环无法实现的时候，定义函数实现，如斐波那契数列
 
+
 def fib(max):
     n, a, b = 0, 0, 1
     while n < max:
