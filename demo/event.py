@@ -2,7 +2,7 @@
 
 
 def double(x):
-    return x * 2;
+    return x * 2
 
 
 def quadruple(x):
