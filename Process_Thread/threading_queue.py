@@ -1,5 +1,5 @@
+# -*- coding: utf-8 -*-
 import threading
-import time
 from queue import Queue
 
 
@@ -9,7 +9,7 @@ def job(l, q):
     q.put(l)
 
 
-def multithreading():
+def multi_threading():
     q = Queue()
     threads = []
     data = [[1, 2, 3], [3, 4, 5], [4, 4, 4], [5, 5, 5]]
@@ -26,4 +26,4 @@ def multithreading():
 
 
 if __name__ == '__main__':
-    multithreading()
+    multi_threading()

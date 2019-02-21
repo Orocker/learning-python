@@ -1,6 +1,10 @@
-##Learn python 3.7 code
->IDE: Pycharm   
->OS: Win10 64 bit and CentOS 64bit      
-我的 [博客](http://www.popo.xyz)
+# Learning-Python
+
+## Operating environment
+
+
+* To run this project, you must have python 3.x version installed.
+* Part of the code can't run under windows, Recommended with Mac or Unix/Linux 
  
 
+### my  [blog](http://www.popo.xyz?from=github)

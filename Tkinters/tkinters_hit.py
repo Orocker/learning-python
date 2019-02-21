@@ -10,7 +10,7 @@ label.pack()
 show = False
 
 
-def Click():
+def click():
     global show
     if show == False:
         show = True
@@ -20,7 +20,7 @@ def Click():
         var.set('')
 
 
-button = tk.Button(window, text='Click me', width=15, height=2, command=Click)
+button = tk.Button(window, text='Click me', width=15, height=2, command=click)
 button.pack()
 
 window.mainloop()
