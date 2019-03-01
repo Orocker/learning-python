@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from multiprocessing import Pool
 import threading
 import multiprocessing
