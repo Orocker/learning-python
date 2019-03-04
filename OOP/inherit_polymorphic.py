@@ -7,7 +7,7 @@ class Animal(object):
 
 
 # 继承
-# 当子类和父类都有相同的方法是，子类的方法会覆盖父类的方法
+# 当子类和父类都有相同的方法时，子类的方法会覆盖父类的方法
 class Dog(Animal):
     def run(self):
         print('Dog is running...')
